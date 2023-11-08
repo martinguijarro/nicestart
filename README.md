@@ -4,14 +4,19 @@
 
 - Pantalla de carga:
 ***
-![Screenshot Load](img/Screenshot_Load.png)
+<img src="./img/Screenshot_Load.png" alt="Screenshot Load" width="200px"/>
 ***
 
 - Pantalla de inicio de sesión:
 ***
-![Screenshot Login](img/Screenshot_Login.png)
+<img src="./img/Screenshot_Login.png" alt="Screenshot Login" width="200px"/>
 ***
 
 - Pantalla de registo:
 ***
-![Screenshot Signup](img/Screenshot_Signup.png)
+<img src="./img/Screenshot_Signup.png" alt="Screenshot Signup" width="200px"/>
+***
+
+- Pantalla principal:
+***
+<img src="./img/Screenshot_Main.png" alt="Screenshot Main" width="200px"/>
