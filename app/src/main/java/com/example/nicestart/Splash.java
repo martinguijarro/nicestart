@@ -3,14 +3,14 @@ package com.example.nicestart;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class Splash extends AppCompatActivity {
 
@@ -20,13 +20,13 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         ImageView mImage = findViewById(R.id.backgroundImage);
+        Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate_animation);
+        mImage.startAnimation(rotate);
 
         Glide.with(this)
-                .load("https://t4.ftcdn.net/jpg/00/53/45/31/360_F_53453175_hVgYVz0WmvOXPd9CNzaUcwcibiGao3CL.jpg")
-                .transition(DrawableTransitionOptions.withCrossFade(2000))
+                .load("https://images.pond5.com/animation-loading-circle-icon-white-footage-077162322_prevstill.jpeg")
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                 .into(mImage);
 
         openApp();
