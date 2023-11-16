@@ -30,11 +30,13 @@
         <activity
             android:name=".Login"
             android:exported="true"
-            android:theme="@style/Theme.NiceStart.NoActionBar">
-        </activity>
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.NiceStart.NoActionBar" />
         <activity
             android:name=".Signup"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.NiceStart.NoActionBar"/>
     </application>
 
 </manifest>
