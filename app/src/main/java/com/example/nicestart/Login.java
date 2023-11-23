@@ -34,4 +34,11 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
     }
+
+    public void openNopeople(View v) {
+        Intent intent = new Intent(Login.this, Nopeople.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
 }
